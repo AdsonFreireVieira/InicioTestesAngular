@@ -44,7 +44,7 @@ input:focus {
     border-color: #0056b3;
 
 }
-button{
+button[type="submit"]{
 padding: 10px 20px;
 border: none;
 border-radius: 6px;
@@ -52,7 +52,7 @@ background-color:#007bff;
 color: #fff;
 font-size: 16px;
 cursor: pointer;
-transition:background 0.3s;
+transition:background 0.3s
 
 }
 button:hover{
@@ -86,4 +86,18 @@ input[type="checkbox"]{
     transform: scale(1.2);
     cursor: pointer;
 
+}
+.item-riscado{
+    text-decoration: line-through;
+
+}
+button[type="button"]{
+padding: 10px 20px;
+border: none;
+border-radius: 6px;
+background-color:#4adc4f;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+transition:background 0.3s;
 }

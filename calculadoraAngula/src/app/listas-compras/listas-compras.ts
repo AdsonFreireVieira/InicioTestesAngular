@@ -21,4 +21,12 @@ this.lista.push(itemlista);
 this.item ='';
 console.table(this.lista)
 }
+
+riscarItem(itemlista :ItemLista){
+  itemlista.comprado = !itemlista.comprado;
+
+}
+limparLista(){
+  this.lista = []
+}
 }
