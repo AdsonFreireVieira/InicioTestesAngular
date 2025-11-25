@@ -1,0 +1,22 @@
+
+@use '@angular/material' as mat;
+
+// Paleta tipo "indigo-pink"
+$my-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
+$my-accent: mat.m2-define-palette(mat.$m2-pink-palette);
+$my-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+// Tema Material (versão Material 2 legado dentro do Material 3)
+$my-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn
+  )
+));
+
+@include mat.all-component-themes($my-theme);
+
+.spacer{
+    flex: 1 1  auto;
+}
